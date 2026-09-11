@@ -1,6 +1,9 @@
 .DS_Store
 outputs/
+__pycache__/
+*.pyc
 work/*
 !work/Sonar/
+!work/SonarWindows/
 .codex/*
 !.codex/environments/

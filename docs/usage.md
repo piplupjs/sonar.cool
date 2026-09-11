@@ -23,3 +23,7 @@ Set `SONAR_SIGNING_IDENTITY` to use your own signing certificate. Otherwise the 
 Swipe and Zoom can target the app in front, including Photos, Preview, and browsers. Swipe uses left/right arrow keys. Zoom uses Command-plus/minus, so it works where those shortcuts zoom the current photo or page. Click the content first; Sonar pauses over text fields.
 
 In native apps, pulling back sends the matching zoom-out steps for the zoom-in steps Sonar sent. Zoom limits and manual changes can affect the final view. Browsers keep the existing final reset to 100%. App support depends on its keyboard shortcuts.
+
+### Windows port
+
+`work/SonarWindows/` is a Python implementation of the same detectors. Practice here stays in the Sonar window. **Control other apps** sends wheel motion, arrow keys, or Ctrl plus/minus to the foreground window. Windows does not inspect focused text fields, so keep that option off while typing. Run `python work/SonarWindows/run_sonar.py --self-test` before live audio.

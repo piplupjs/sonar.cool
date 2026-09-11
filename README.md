@@ -22,6 +22,18 @@ cd sonar.cool
 
 The script builds and tests Sonar, installs it to `~/Applications/Sonar.app`, and opens it. Source files live in `work/Sonar/`. Try the gestures on your Mac to see how they respond to your setup.
 
+### Windows
+
+A Python port lives in `work/SonarWindows/`. It uses the same Doppler detector, scroll/swipe/zoom timing, and synthetic tests. Live audio uses WASAPI through `sounddevice`.
+
+```
+python -m pip install -r work/SonarWindows/requirements.txt
+python work/SonarWindows/run_sonar.py --self-test
+python work/SonarWindows/run_sonar.py
+```
+
+Use the built-in speakers and microphone. Accuracy testing on Windows PCs is ongoing. See `work/SonarWindows/README.md`.
+
 ## Before you start
 
 Allow microphone access and Accessibility access for controlling other apps. Choose a mode, press Start, and keep your hands still during the countdown. Stop the session from the menu bar or with Control–Option–Command–Space.
